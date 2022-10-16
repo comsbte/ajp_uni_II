@@ -1,11 +1,6 @@
 package main_unit_II;
 
-import java.awt.BorderLayout;
 import java.awt.FlowLayout;
-import java.awt.Image;
-import java.awt.Toolkit;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
