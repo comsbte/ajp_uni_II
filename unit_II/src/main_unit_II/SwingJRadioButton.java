@@ -5,20 +5,20 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 import javax.swing.ImageIcon;
-import javax.swing.JCheckBox;
 import javax.swing.JFrame;
+import javax.swing.JRadioButton;
 
-public class SwingJCheckBox {
+public class SwingJRadioButton {
 
 	public static void main(String[] args) {
-		JFrame jf = new JFrame("Label and Button");
+		JFrame jf = new JFrame("Swing JRadioButton");
 		jf.setLayout(new FlowLayout());
 		
 		ImageIcon img = new ImageIcon("images/logo_msbte.png");
-		JCheckBox jcb = new JCheckBox("Image as Checkbox",img,true);
-		jf.add(jcb);
+		JRadioButton jrb = new JRadioButton("Image as Radiobutton",img,true);
+		jf.add(jrb);
 		
-		jcb.addItemListener(new ItemListener() {
+		jrb.addItemListener(new ItemListener() {
 			@Override
 			public void itemStateChanged(ItemEvent e) {
 				if(e.getStateChange()==ItemEvent.DESELECTED)
@@ -28,18 +28,20 @@ public class SwingJCheckBox {
 			}
 		});
 		
-		JCheckBox jcb2 = new JCheckBox("ONLY TEXT AS Checkbox",true);
-		jf.add(jcb2);
+		JRadioButton jrb2 = new JRadioButton("ONLY TEXT AS Radiobutton",true);
+		jf.add(jrb2);
 		
-		jcb2.addItemListener(new ItemListener() {
+		jrb2.addItemListener(new ItemListener() {
 			@Override
 			public void itemStateChanged(ItemEvent e) {
 				if(e.getStateChange()==ItemEvent.DESELECTED)
-					System.out.println("You DESELECTED CHECKBOX");
+					System.out.println("You DESELECTED Radiobutton");
 				else
-					System.out.println("You SELECTED CHECKBOX");
+					System.out.println("You SELECTED Radiobutton");
 			}
 		});
+		
+		
 		
 		jf.setVisible(true);
 		jf.setSize(700, 700);
