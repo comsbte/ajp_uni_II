@@ -9,7 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.JRadioButton;
 
 public class SwingJRadioButton { 
-
+ 
 	public static void main(String[] args) {
 		JFrame jf = new JFrame("Swing JRadioButton");
 		jf.setLayout(new FlowLayout());
