@@ -22,7 +22,8 @@ public class SwingJLabelJButton {
 		jf.add(limg);
 		
 		ImageIcon img2 = new ImageIcon("images/dte.jpg");		
-		JLabel limg2 = new JLabel("This is LOGO of DTE(Label)",img2,JLabel.RIGHT);
+		JLabel limg2 = new JLabel("This is LOGO of DTE(Label)",
+									img2,JLabel.RIGHT);
 		
 		jf.add(limg2);
 		

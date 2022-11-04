@@ -31,6 +31,15 @@ public class SwingJRadioButton2 implements ActionListener{
 		jf.add(jrb2);
 		jf.add(jrb1);
 		
+		JRadioButton jrbmale = new JRadioButton("Male");
+		JRadioButton jrbfemale = new JRadioButton("Female");
+		ButtonGroup bgGender = new ButtonGroup();
+		bgGender.add(jrbfemale);
+		bgGender.add(jrbmale);
+		
+		jf.add(jrbfemale);
+		jf.add(jrbmale);
+		
 		jf.setVisible(true);
 		jf.setSize(700, 700);
 		jf.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
