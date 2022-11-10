@@ -14,7 +14,7 @@ public class SwingJScrollPane {
 		//and then add that JPanel inside JScrollPane 
 		JScrollPane jsp = 
 				new JScrollPane(jta,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
-						JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+						JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		
 		jf.add(jsp);
 		

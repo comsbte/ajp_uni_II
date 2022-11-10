@@ -39,10 +39,11 @@ public class SwingJScrollPane2 {
 			public void actionPerformed(ActionEvent e) {
 				int r = Integer.parseInt(txtRepeat.getText());
 				String str = txt1.getText();
-				String strOut="";
+				String strOut="<html>";
 				for(int i=0;i<r;i++) {
-					strOut = strOut + str;
+					strOut = strOut + str+"<br>";
 				}
+				strOut=strOut+"</html>";
 				jloutput.setText(strOut);
 				System.out.println(strOut);
 			}
