@@ -3,10 +3,10 @@ import java.awt.FlowLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JProgressBar;    
-public class ProgressBarExample extends JFrame{    
+public class SwingProgressBar extends JFrame{    
 	JProgressBar jpb;    
 	int initial=20,num=0;     
-	ProgressBarExample(){    
+	SwingProgressBar(){    
 		jpb=new JProgressBar(0,100);          	   
 		jpb.setValue(initial);    
 		jpb.setStringPainted(true);    
@@ -22,7 +22,7 @@ public class ProgressBarExample extends JFrame{
 		}    
 	}    
 	public static void main(String[] args) {    
-		ProgressBarExample m=new ProgressBarExample();
+		SwingProgressBar m=new SwingProgressBar();
 		m.setVisible(true);    
 		m.iterate();    
 	}    
